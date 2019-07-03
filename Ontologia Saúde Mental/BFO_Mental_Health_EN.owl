@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#"
+     xml:base="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56">
+        <rdfs:comment>The Mental Health Ontology is a variant of BFO (Basic Formal Ontology). Includes only the class hierarchy and annotations from the full OWL version. There are the object properties between entities but there are no logical axioms.
+ 
+If you plan to use the relations that define BFO 2, you should import bfo.owl. To the extent that the relations are used without importing bfo.owl, be mindful that they should be used in a manner consistent with their use in bfo.owl. Otherwise if your ontology is imported by a another ontology that imports bfo.owl there may be inconsistencies. 
+ 
+See the BFO 2 release notes for further information about BFO 2. Please note that the current release of bfo.owl uses temporal relations when the subject or object is a continuant, a major change from BFO 1.
+
+The Mental Health Ontology describes mental health services in Brazil. The content is developed by the Medical School of Ribeirão Preto in University of São Paulo. Based on the project Disease-Ontology and modeled according to the BFO pattern.</rdfs:comment>
+        <rdfs:label>Mental Health Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#analise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#analise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#are -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#are">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#audit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#associate_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#associate_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#diagnoses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#diagnoses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#follow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#follow">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#mental_health_laws"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#form -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#form"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#audit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#mental_health_laws"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#monitoring"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#planning"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#protocol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_beds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_beds">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#bed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_disorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_disorder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_expenses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_expenses">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_mental_faculties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_mental_faculties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_planning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_planning">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#planning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_protocol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_protocol">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#protocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_speciality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_speciality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#professional_speciality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_sympton -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#has_sympton">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#may_causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#may_causes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#prescribes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#prescribes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#presents_profile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#presents_profile">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient_profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychiatrist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychoanalyst"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychologist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#receive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#receive">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#bed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#monitoring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treat_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treat_with">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychoanalyst"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychologist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychotherapic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#audit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#audit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+        <rdfs:comment>audit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object"/>
+        <rdfs:comment>bed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#caps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#caps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#case_discussion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#case_discussion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#entity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent"/>
+        <rdfs:label>continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity"/>
+        <rdfs:label>continuant_fiat_boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disorder_classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disorder_classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role"/>
+        <rdfs:label>disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#drug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity"/>
+        <rdfs:comment>expenses</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#fiat_object_part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#fiat_object_part">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity"/>
+        <rdfs:label>fiat_object_part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disposition"/>
+        <rdfs:label>function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant"/>
+        <rdfs:label>generically_dependent_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#history -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#history">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_profile"/>
+        <rdfs:comment>history</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#human_resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#human_resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+        <rdfs:comment>human_resources</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#independent_continuant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity"/>
+        <rdfs:label>immaterial_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#independent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#independent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant"/>
+        <rdfs:label>independent_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant"/>
+        <rdfs:comment>indicator</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+        <rdfs:comment>infrastructure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#independent_continuant"/>
+        <rdfs:label>material_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#medical_release -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#medical_release">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#medication_indication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#medication_indication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#mental_health_laws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#mental_health_laws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity"/>
+        <rdfs:comment>mental_health_laws</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+        <rdfs:comment>monitoring</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity"/>
+        <rdfs:label>object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object_aggregate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object_aggregate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#material_entity"/>
+        <rdfs:label>object_aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#entity"/>
+        <rdfs:label>occurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_continuant_fiat_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_continuant_fiat_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary"/>
+        <rdfs:label>one-dimensional_continuant_fiat_boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region"/>
+        <rdfs:label>one-dimensional_spatial_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one_dimensional_temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one_dimensional_temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#temporal_region"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero_dimensional_temporal_region"/>
+        <rdfs:label>one_dimensional_temporal_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#other_health_units -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#other_health_units">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient_profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient_profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality"/>
+        <rdfs:label>patient_profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role"/>
+        <rdfs:comment>planning</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent"/>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent"/>
+        <rdfs:label>process_boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+        <rdfs:label>process_profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#professional_speciality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#professional_speciality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality"/>
+        <rdfs:label>professional_speciality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant"/>
+        <rdfs:comment>protocol</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychiatrist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychiatrist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychoanalyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychoanalyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychotherapic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#psychotherapic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment"/>
+        <rdfs:label>psychotherapic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#specifically_dependent_continuant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity"/>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#raps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#raps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#specifically_dependent_continuant"/>
+        <rdfs:label>realizable_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#reception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#reception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#recreational_activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#recreational_activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#relational_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#relational_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality"/>
+        <rdfs:label>relational_quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#realizable_entity"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#scheduling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#scheduling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#service_budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#service_budget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+        <rdfs:comment>service budget</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#side_effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#side_effect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#disposition"/>
+        <rdfs:comment>side_effect</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity"/>
+        <rdfs:label>site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#immaterial_entity"/>
+        <rdfs:label>spatial_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatiotemporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatiotemporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent"/>
+        <rdfs:label>spatiotemporal_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#specifically_dependent_continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#specifically_dependent_continuant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant"/>
+        <rdfs:label>specifically_dependent_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#syndrom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#syndrom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#occurrent"/>
+        <rdfs:label>temporal_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#therapeutic_project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#therapeutic_project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#therapist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#therapist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#health_professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#three-dimensional_spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#three-dimensional_spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region"/>
+        <rdfs:label>three-dimensional_spatial_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+        <rdfs:label>treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_continuant_fiat_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_continuant_fiat_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary"/>
+        <rdfs:label>two-dimensional_continuant_fiat_boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region"/>
+        <rdfs:label>two-dimensional_spatial_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_continuant_fiat_boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_continuant_fiat_boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary"/>
+        <rdfs:label>zero-dimensional_continuant_fiat_boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_spatial_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_spatial_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region"/>
+        <rdfs:label>zero-dimensional_spatial_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero_dimensional_temporal_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero_dimensional_temporal_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#temporal_region"/>
+        <rdfs:label>zero_dimensional_temporal_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#individual_level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#individual_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#patient_profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#local_level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#local_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#audit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#human_resources"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#infrastructure"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#monitoring"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#planning"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#protocol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#service_budget"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#technology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#national_level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#national_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#expenses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#mental_health_laws"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#continuant_fiat_boundary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#site"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatial_region"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#fiat_object_part"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#object_aggregate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#generically_dependent_continuant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#independent_continuant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#specifically_dependent_continuant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_continuant_fiat_boundary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_continuant_fiat_boundary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_continuant_fiat_boundary"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#one-dimensional_spatial_region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#three-dimensional_spatial_region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#two-dimensional_spatial_region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#zero-dimensional_spatial_region"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#process_boundary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#spatiotemporal_region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56#temporal_region"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl" uri="BFO-master/src/tests/chebi-classification/chebi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obofoundry.org/obo/bfo.owl" uri="BFO-master/src/ontology/owl-ruttenberg/exploratory/bfo-2-draft.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obofoundry.org/obo/bfo/example/realization-chain.owl" uri="BFO-master/src/ontology/owl-ruttenberg/exploratory/examples/realization-chain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-regions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/bfo.owl" uri="Ontologia%20Saúde%20Mental/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-bfo2-granularity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-bfo2-regions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-bfo2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-classes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-relations.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-bfo2-all.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-relations.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/bfo/granularity-classes.owl" uri="BFO-master/releases/owl-ruttenberg-2010-05-25/ruttenberg-granularity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/bfo/region-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2-regions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/bfo_tqc.owl" uri="BFO-master/docs/OWL-TIME/tests/bfo_tqc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/bfo_tr.owl" uri="BFO-master/docs/OWL-TIME/tests/bfo_tr.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/chebi-in-bfo.owl" uri="BFO-master/src/tests/chebi-classification/classify-chebi-bfo2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/example/alanr/untitled-ontology-116" uri="BFO-master/src/ontology/owl-group/examples/permanent-generic-part-of.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/example/alanr/untitled-ontology-440" uri="BFO-master/docs/OWL-TIME/tests/tcq-counterexample-1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://purl.obolibrary.org/obo/example/alanr/untitled-ontology-440" uri="BFO-master/docs/OWL-TIME/tests/tcq-counterexample-2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/example/generic-part.owl" uri="BFO-master/src/ontology/owl-group/examples/generic-part.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/organism-temporal-test.owl" uri="BFO-master/src/ontology/owl-ruttenberg/exploratory/organism-temporal-test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/rel.owl" uri="BFO-master/rel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://purl.obolibrary.org/obo/temporal-prototype.owl" uri="BFO-master/src/ontology/owl-ruttenberg/exploratory/temporalized-relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.halbordnung.de/ontologies/bfo-exploratory/temporalized_relations.owl" uri="BFO-master/src/ontology/owl-grewe/exploratory/temporalized_relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.halbordnung.de/tr-counterexample-1.owl" uri="BFO-master/docs/OWL-TIME/tests/tr-counterexample-1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.ifomis.org/bfo/1.0" uri="BFO-master/releases/1.0/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.ifomis.org/bfo/1.1" uri="BFO-master/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.ifomis.org/obo/ro/1.0" uri="BFO-master/ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://www.semanticweb.org/ontologies/2012/4/Ontology1336055550512.owl" uri="BFO-master/src/ontology/owl-schulz/tqc2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://www.semanticweb.org/ontologies/2012/4/Ontology1336055550512.owl" uri="BFO-master/src/ontology/owl-schulz/tqc6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.semanticweb.org/schulz/ontologies/2013/9/temporalized-relations-test" uri="BFO-master/docs/OWL-TIME/tests/bfo_tr_uc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.semanticweb.org/schulz/ontologies/2013/9/untitled-ontology-10" uri="BFO-master/docs/OWL-TIME/tests/bfo_tqc_uc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="http://www.semanticweb.org/sektor/ontologies/2018/3/untitled-ontology-56" uri="BFO_Mental_Health_EN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://www.w3.org/2002/07/owl" uri="BFO-master/src/ontology/owl-schulz/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="duplicate:http://www.w3.org/2002/07/owl" uri="BFO-master/src/ontology/owl-schulz/bfo_tqc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl" uri="BFO-master/src/tests/chebi-classification/as-submitted/chebi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/bfo_classes_only_latest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/2012-11-15-bugfix/owl-group/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/2012-07-20-graz/owl-group/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/2.0/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/2014-05-03/owl-group/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/releases/2014-05-03/owl-group/bfo_classes_only.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO-master/src/ontology/owl-group/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2-classes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2_all.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2_granularity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2_regions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/core-relations.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2-relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/bfo/granularity-classes.owl" uri="BFO-master/src/ontology/owl-ruttenberg/bfo2-granularity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://purl.obolibrary.org/obo/chebi-in-bfo.owl" uri="BFO-master/src/tests/chebi-classification/as-submitted/chebi-in-bfo-broken.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://www.ifomis.org/bfo/1.1" uri="BFO-master/releases/1.1.1/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529012829630" name="shadowed:http://www.ifomis.org/bfo/1.1" uri="BFO-master/releases/1.1/bfo.owl"/>
+    </group>
+</catalog>
