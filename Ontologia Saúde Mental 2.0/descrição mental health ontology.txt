@@ -1,0 +1,1 @@
+This ontology can be used to assist in the management of mental healthcare network in order to allow the integration and interoperability between independent databases and to enable the generation of relevant indicators to mental health, in order to improve decision making, increasing the efficiency and effectiveness of health management.
