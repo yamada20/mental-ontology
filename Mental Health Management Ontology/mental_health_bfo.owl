@@ -315,21 +315,20 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#canForwardTo -->
+
+    <owl:ObjectProperty rdf:about="http://mental-ontology.com/mental_health_bfo.owl#canForwardTo">
+        <rdfs:domain rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <rdfs:range rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#canLeadTo -->
 
     <owl:ObjectProperty rdf:about="http://mental-ontology.com/mental_health_bfo.owl#canLeadTo">
         <rdfs:domain rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#MentalDisorder"/>
         <rdfs:range rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Death"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://mental-ontology.com/mental_health_bfo.owl#covers -->
-
-    <owl:ObjectProperty rdf:about="http://mental-ontology.com/mental_health_bfo.owl#covers">
-        <rdfs:domain rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthPolicy"/>
-        <rdfs:domain rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnicSystem"/>
-        <rdfs:range rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
     </owl:ObjectProperty>
     
 
@@ -581,15 +580,6 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
-    <!-- http://mental-ontology.com/mental_health_bfo.owl#OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc -->
-
-    <owl:DatatypeProperty rdf:about="http://mental-ontology.com/mental_health_bfo.owl#OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://mental-ontology.com/mental_health_bfo.owl#address -->
 
     <owl:DatatypeProperty rdf:about="http://mental-ontology.com/mental_health_bfo.owl#address"/>
@@ -718,6 +708,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AdministrativeProfessional">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#AdmissionDocument -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AdmissionDocument">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
     </owl:Class>
     
 
@@ -930,6 +928,15 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#AuxiliaryHealthService -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AuxiliaryHealthService">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <rdfs:comment xml:lang="pt">Serviços auxiliares com fins à saúde</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#AvoidantPersonalityDisorder -->
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AvoidantPersonalityDisorder">
@@ -1054,6 +1061,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CannabisAbuse">
         <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#SubstanceAbuse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#AuxiliaryHealthService"/>
     </owl:Class>
     
 
@@ -1819,14 +1834,6 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
-    <!-- http://mental-ontology.com/mental_health_bfo.owl#Identifier -->
-
-    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Identifier">
-        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
-    </owl:Class>
-    
-
-
     <!-- http://mental-ontology.com/mental_health_bfo.owl#Implementation -->
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Implementation">
@@ -2368,6 +2375,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#PatientID">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#PatientIdentifier -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#PatientIdentifier">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
     </owl:Class>
     
 
@@ -3114,6 +3129,23 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#TertiaryCareUnit">
         <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#TherapeuticCommunity -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#TherapeuticCommunity">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#AuxiliaryHealthService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#TherapeuticResidentialService -->
+
+    <owl:Class rdf:about="http://mental-ontology.com/mental_health_bfo.owl#TherapeuticResidentialService">
+        <rdfs:subClassOf rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#AuxiliaryHealthService"/>
+        <rdfs:comment xml:lang="pt">Serviço Residencial Terapêutico (SRT)</rdfs:comment>
     </owl:Class>
     
 
@@ -4733,6 +4765,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#AdmissionDocument -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AdmissionDocument">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#AlcoholUseDisorder -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#AlcoholUseDisorder">
@@ -4784,6 +4824,7 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#BasicHealthUnit">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CAPS"/>
     </owl:NamedIndividual>
     
 
@@ -4792,6 +4833,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#BehaviorTherapy">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#BelongingsRelation -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#BelongingsRelation">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
     </owl:NamedIndividual>
     
 
@@ -4816,7 +4865,6 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#BuildEvolutionReport">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <mental_health_bfo1:OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</mental_health_bfo1:OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc>
     </owl:NamedIndividual>
     
 
@@ -4833,6 +4881,12 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CAPS">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#GatewayToTheHealthSystem"/>
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#GeneralHospital"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#PsychiatricHospital"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#TherapeuticCommunity"/>
     </owl:NamedIndividual>
     
 
@@ -4869,11 +4923,34 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#CAPSi -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CAPSi">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#PsychosocialCareCenter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#CensusForm -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CensusForm">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#CheckVitalSign -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CheckVitalSign">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <mental_health_bfo1:OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</mental_health_bfo1:OWLDataProperty_fd11b318_e580_405d_8bd8_99039ce703dc>
     </owl:NamedIndividual>
     
 
@@ -4882,6 +4959,15 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Clonazepam">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Anxiolytic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#CommunityHealthAgents -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CommunityHealthAgents">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CAPS"/>
     </owl:NamedIndividual>
     
 
@@ -4946,6 +5032,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#Exercise -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Exercise">
@@ -4962,6 +5056,24 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#FamilyHealthSupportNucleus -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#FamilyHealthSupportNucleus">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CAPS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#FamilyHealthTeam -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#FamilyHealthTeam">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+        <mental_health_bfo1:canForwardTo rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CAPS"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#FamilyTherapy -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#FamilyTherapy">
@@ -4974,6 +5086,23 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#FeelingsOfGuilt">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#FirstAid -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#FirstAid">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit"/>
+        <rdfs:comment xml:lang="pt">Pronto-socorro</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#GeneralHospital -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#GeneralHospital">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
     </owl:NamedIndividual>
     
 
@@ -5019,6 +5148,37 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#HospitalSantaTerezaRibeiraoPreto">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#PsychiatricHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#Hospitalization -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Hospitalization">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#AdmissionDocument"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#BelongingsRelation"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CensusForm"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HospitalizationAuthorization"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HospitalizationRequest"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#MedicalRecord"/>
+        <mental_health_bfo1:needsDocument rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#PatientIdentifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#HospitalizationAuthorization -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#HospitalizationAuthorization">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#HospitalizationRequest -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#HospitalizationRequest">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
     </owl:NamedIndividual>
     
 
@@ -5094,6 +5254,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#LossOfInterest">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#MedicalRecord -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#MedicalRecord">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
     </owl:NamedIndividual>
     
 
@@ -5219,10 +5387,26 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#PatientIdentifier -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#PatientIdentifier">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Document"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#PersistentSad -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#PersistentSad">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#PsychiatricHospital -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#PsychiatricHospital">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
     </owl:NamedIndividual>
     
 
@@ -5271,7 +5455,6 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#RAPS">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#PsychosocialCareNetwork"/>
-        <mental_health_bfo1:hasGateway rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#CAPS"/>
         <mental_health_bfo1:hasGateway rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#UBS"/>
     </owl:NamedIndividual>
     
@@ -5281,6 +5464,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Restlessness">
         <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#SAMU -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#SAMU">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit"/>
     </owl:NamedIndividual>
     
 
@@ -5333,6 +5524,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#TherapeuticCommunity -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#TherapeuticCommunity">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#HealthUnit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#Tremor -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#Tremor">
@@ -5357,6 +5556,14 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     
 
 
+    <!-- http://mental-ontology.com/mental_health_bfo.owl#UPA -->
+
+    <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#UPA">
+        <rdf:type rdf:resource="http://mental-ontology.com/mental_health_bfo.owl#EmergencyServiceUnit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://mental-ontology.com/mental_health_bfo.owl#WeightGain -->
 
     <owl:NamedIndividual rdf:about="http://mental-ontology.com/mental_health_bfo.owl#WeightGain">
@@ -5373,10 +5580,16 @@ Bioportal: http://bioportal.bioontology.org/ontologies/MHMO</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://mental-ontology.com/mental_health_bfo.owl#CareFacilitie">
+        <rdfs:comment xml:lang="pt">Unidades de Acolhimento (UA)</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://mental-ontology.com/mental_health_bfo.owl#GoodSleeping">
         <rdfs:seeAlso>https://www.sleepfoundation.org/press-release/national-sleep-foundation-recommends-new-sleep-times
 
 https://www.webmd.com/sleep-disorders/news/20020214/are-you-sleeping-enough----too-much#1</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://mental-ontology.com/mental_health_bfo.owl#HospitalizationAuthorization">
+        <rdfs:comment xml:lang="pt">Autorização de Internação Hospitalar (AIH)</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
